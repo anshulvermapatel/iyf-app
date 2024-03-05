@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Android and iOS Buttons</title>
+    <style>
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0 5px #0056b3;
+        }
+
+        .button:hover {background-color: #0056b3;}
+
+        .button:active {
+            background-color: #0056b3;
+            box-shadow: 0 3px #0056b3;
+            transform: translateY(4px);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <button class="button" onclick="redirectToAndroid()">Android</button>
+        <button class="button" onclick="redirectToiOS()">iOS</button>
+    </div>
+
+    <script>
+        function redirectToAndroid() {
+            // Redirect to the Android app store or any other Android link
+            window.location.href = "https://play.google.com/store/apps";
+        }
+
+        function redirectToiOS() {
+            // Redirect to the iOS app store or any other iOS link
+            window.location.href = "https://www.apple.com/ios/app-store/";
+        }
+    </script>
+</body>
+</html>
